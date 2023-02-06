@@ -1,0 +1,10 @@
+.blog {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .news .news-card:nth-child(3) {
+    position: relative;
+    right: 0%;
+  }
+}

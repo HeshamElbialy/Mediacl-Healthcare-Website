@@ -1,0 +1,325 @@
+.book {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin: 0 210px;
+  position: relative;
+}
+
+.book-left {
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+.book-left h3 {
+  color: var(--main-color);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.book .book-left .form {
+  padding: 22px;
+  position: relative;
+  left: 21px;
+  background: white;
+  top: 24px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.book-left .input {
+  width: 450px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #cccdf1;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.book-left .input:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.book-left .button {
+  text-align: center;
+}
+
+.book-left button {
+  color: white;
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 10px 25px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  box-shadow: 0 5px 20px 0 rgb(86 90 207 / 30%);
+  margin-top: 20px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.book-right {
+  display: inline-flex;
+  padding: 50px 20px;
+  position: relative;
+}
+
+.book-right .mobile {
+  width: 700px;
+  height: auto;
+  position: absolute;
+  bottom: -19px;
+}
+
+.book-right .person {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  bottom: 18px;
+  right: 0;
+  animation: person 3s ease-in-out infinite alternate;
+  -webkit-animation: person 3s ease-in-out infinite alternate;
+}
+
+@keyframes person {
+  0% {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+  }
+  to {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+  }
+}
+
+.book-right .like {
+  width: 270px;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  right: -160px;
+  padding: 80px;
+  animation: Like 3s 2s ease-in-out infinite alternate;
+  -webkit-animation: Like 3s 2s ease-in-out infinite alternate;
+}
+
+@keyframes Like {
+  0% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
+}
+
+.book-right .setting {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  bottom: 30px;
+  right: 13px;
+  padding: 80px;
+  margin: 20px auto;
+  animation: Like 3s 2s ease-in-out infinite alternate;
+  -webkit-animation: Like 3s 2s ease-in-out infinite alternate;
+}
+
+.book-right .location {
+  width: 280px;
+  height: auto;
+  position: absolute;
+  top: 190px;
+  left: 13px;
+  padding: 80px;
+  margin: 20px auto;
+  animation: Like 3s 2s ease-in-out infinite alternate;
+  -webkit-animation: Like 3s 2s ease-in-out infinite alternate;
+}
+
+.book-right .right {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: -30px;
+  padding: 60px;
+  margin: 20px auto;
+  animation: Like 3s 2s ease-in-out infinite alternate;
+  -webkit-animation: Like 3s 2s ease-in-out infinite alternate;
+}
+
+.book-container .shape {
+  width: 140px;
+  height: auto;
+  position: absolute;
+  left: -260px;
+  bottom: 0;
+  margin: 20px auto;
+  animation: person 3s 2s ease-in-out infinite alternate;
+  -webkit-animation: person 3s 2s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 1024px) {
+  .book-container {
+    margin: 0 50px;
+  }
+  .book-left {
+    padding: 0px 10px;
+  }
+  .book-left .input {
+    width: 250px;
+    padding: 20px;
+  }
+  .book-right {
+    padding: 10px 5px;
+  }
+
+  .book-right .mobile {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    bottom: 75px;
+    left: -80px;
+    margin: 20px auto;
+  }
+
+  .book-right .person {
+    width: 145px;
+    height: auto;
+    margin: 0;
+  }
+  .book-right .like {
+    width: 80px;
+    height: auto;
+    top: 230px;
+    right: -35px;
+    padding: 4px;
+  }
+  .book-right .setting {
+    width: 60px;
+    height: auto;
+    bottom: 125px;
+    left: 50px;
+    padding: 0px;
+  }
+
+  .book-right .location {
+    width: 220px;
+    height: auto;
+    position: absolute;
+    top: 270px;
+    left: -122px;
+    padding: 80px;
+  }
+
+  .book-right .right {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    top: 90px;
+    left: -120px;
+    padding: 60px;
+  }
+  .book-container .shape {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .book-container {
+    grid-template-columns: 1fr;
+    gap: 50;
+  }
+  .book-left {
+    padding: 0px;
+  }
+  .book .book-left .form {
+    right: -10px;
+    padding-left: 0;
+  }
+  .book-right .mobile {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .book-right .person {
+    width: 120px;
+    height: auto;
+    margin: 0;
+    bottom: 0px;
+    top: 65px;
+  }
+  .book-right .like {
+    width: 100px;
+    height: auto;
+    top: 14px;
+    right: -30px;
+    padding: 10px;
+  }
+  .book-right .setting {
+    width: 180px;
+    height: auto;
+    bottom: 0px;
+    top: 100px;
+    left: 90px;
+    padding: 70px;
+  }
+
+  .book-right .location {
+    width: 210px;
+    height: auto;
+    top: 40px;
+    left: -45px;
+    padding: 80px;
+  }
+
+  .book-right .right {
+    width: 160px;
+    height: auto;
+    top: -20px;
+    left: -70px;
+    padding: 60px;
+  }
+  .book-container .shape {
+    display: none;
+  }
+}

@@ -1,0 +1,80 @@
+.login-page {
+  margin: 50px 210px;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  text-align: center;
+}
+
+.login-container .logo {
+  width: 200px;
+  margin-right: 0;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.login-container .input {
+  text-align: left;
+  width: 400px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #cccdf1;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.login-container .input:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.login-container button {
+  color: #fff;
+  background: var(--primary-color);
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.login .login-container .text-wraper {
+  margin: 20px 0;
+}
+
+.login .login-container .para1 {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.login .login-container .para {
+  color: #444;
+}
+
+.login .login-container button {
+  padding: 20px;
+}
+
+.login .login-container .reg-btn {
+  background: var(--secondary-color);
+}
+
+@media screen and (max-width: 767px) {
+  .login-container .input {
+    width: 300px;
+  }
+}

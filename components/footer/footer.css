@@ -1,0 +1,241 @@
+.footer {
+  padding-top: var(--padding-top);
+  background: url("../../assets/footer-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.footer .shape {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 140px;
+  animation: person 3s ease-in-out infinite alternate;
+  -webkit-animation: person 3s ease-in-out infinite alternate;
+}
+
+.footer .circle {
+  position: absolute;
+  left: 30px;
+  bottom: 40%;
+  width: 100px;
+  animation: Like 3s 2s ease-in-out infinite alternate;
+  -webkit-animation: Like 3s 2s ease-in-out infinite alternate;
+}
+
+.footer .blue-square {
+  position: absolute;
+  right: 120px;
+  top: 10%;
+  width: 70px;
+  animation: Square 14s linear infinite;
+  -webkit-animation: Square 14s linear infinite;
+}
+
+.footer .shape2 {
+  position: absolute;
+  right: 80px;
+  bottom: 25%;
+  width: 140px;
+  animation: person 3s ease-in-out infinite alternate;
+  -webkit-animation: person 3s ease-in-out infinite alternate;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  padding: 0px 150px;
+}
+
+.footer-container > article img {
+  width: 200px;
+}
+
+.footer-container article p {
+  margin: 20px 0;
+  width: 250px;
+}
+
+.footer-container .phone-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-container .phone-box .phone {
+  color: white;
+  background: var(--secondary-color);
+  width: 60px;
+  height: 60px;
+  padding: 17px;
+  border-radius: 3rem 3rem 0 3rem;
+  -webkit-border-radius: 3rem 3rem 0 3rem;
+  -moz-border-radius: 3rem 3rem 0 3rem;
+  -ms-border-radius: 3rem 3rem 0 3rem;
+  -o-border-radius: 3rem 3rem 0 3rem;
+}
+
+.footer .contact span {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.footer .contact h4 {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.footer article h3 {
+  font-weight: bold;
+  position: relative;
+  color: var(--main-color);
+}
+
+.footer article h3::before {
+  content: "";
+  width: 26%;
+  height: 7px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background: url("../../assets/blue-lines.png");
+  text-align: center;
+}
+
+.footer article ul {
+  padding-top: 30px;
+  padding-left: 0;
+}
+
+.footer article ul li {
+  padding-bottom: 15px;
+}
+
+.footer article ul li a {
+  color: #606061;
+}
+
+.footer article ul li a:hover {
+  color: var(--primary-color);
+}
+
+.footer input {
+  padding: 10px;
+  margin: 30px 0;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.footer input:hover {
+  border-color: #d9d9da;
+}
+
+.footer input:focus {
+  border-color: var(--primary-color);
+}
+
+.footer button {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.footer button:hover {
+  box-shadow: rgba(241, 119, 50, 0.3);
+}
+
+.footer .social-box {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-box img {
+  width: 30px;
+}
+
+.footer__copyright {
+  color: var(--color-gray-100);
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 2px solid #d4d5f1;
+  margin-top: 3rem;
+}
+
+.footer__copyright .name {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding-top: 0;
+  }
+  .footer .shape {
+    top: -60px;
+    width: 120px;
+  }
+  .footer .shape2 {
+    bottom: 15%;
+    right: 60px;
+  }
+  .footer .circle {
+    bottom: 20px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+  }
+  .footer__copyright {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 0;
+  }
+  .footer .shape2,
+  .footer .circle,
+  .footer .shape,
+  .footer .blue-square {
+    display: none;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 30px;
+    padding: 0 10px;
+    margin: 20px auto;
+  }
+  .footer-container article {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .footer article h3::before {
+    left: 30%;
+    width: 40%;
+  }
+  .footer .social-box {
+    justify-content: center;
+  }
+  .footer__copyright {
+    margin-top: 2rem;
+  }
+}

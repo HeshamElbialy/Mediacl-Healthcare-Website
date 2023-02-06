@@ -1,0 +1,67 @@
+.register {
+  margin: 50px 210px;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container {
+  text-align: center;
+}
+
+.register-container .logo {
+  width: 200px;
+  margin-right: 0;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.register-container .input {
+  text-align: left;
+  width: 400px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #cccdf1;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.register-container .input:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.register-container button {
+  color: #fff;
+  background: var(--primary-color);
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.register-container p {
+  margin: 20px 0;
+}
+
+.register-container .login {
+  background: var(--secondary-color);
+}
+
+@media screen and (max-width: 767px) {
+  .register-container .input {
+    width: 300px;
+  }
+}

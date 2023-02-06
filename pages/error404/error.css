@@ -1,0 +1,56 @@
+.error {
+  padding-bottom: var(--padding-bottom);
+}
+
+.error-container {
+  max-width: 550px;
+  text-align: center;
+  margin: auto;
+}
+
+.error-container h1 {
+  font-size: 180px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.error-container span {
+  background: url("../../assets/error.gif");
+  background-size: 100%;
+  margin: 0 10px;
+  width: 145px;
+  height: 145px;
+  display: inline-block;
+}
+.error-container h3 {
+  color: var(--main-color);
+  font-size: 30px;
+  max-width: 550px;
+  text-align: center !important;
+}
+.error-container p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.error-container .btn {
+  color: #fff;
+  background: var(--primary-color);
+  padding: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .error-container h1 {
+    font-size: 130px;
+  }
+
+  .error-container span {
+    width: 100px;
+    height: 100px;
+  }
+  .error-container h3 {
+    font-size: 25px;
+    max-width: 550px;
+  }
+}

@@ -1,0 +1,138 @@
+.testimonials {
+  width: 50rem;
+  margin-inline: auto;
+  margin-top: 10rem;
+}
+
+.testimonials__head {
+  text-align: center;
+}
+
+.testimonials .testimonials__head h5 {
+  background: url("../../assets/download\ \(2\).png");
+  width: 200px;
+  text-align: center;
+  margin: 20px auto;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.testimonials h2 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.card.testimonial {
+  position: relative;
+  text-align: left;
+  margin-top: 5rem;
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.testimonial__avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  overflow: hidden;
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 2rem);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.testimonial:hover .testimonial__avatar {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-color: var(--secondary-color);
+}
+
+.testimonial__quote {
+  font-style: italic;
+  margin: 4rem 0 2rem;
+}
+
+.card small.testimonial__title {
+  margin-top: 0.3rem;
+}
+
+.testimonials__btn-container {
+  width: fit-content;
+  margin: 2.5rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonials__btn {
+  background: transparent;
+  cursor: pointer;
+}
+
+.testimonials__btn svg {
+  fill: var(--secondary-color);
+  font-size: 1.8rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.testimonials .plus {
+  position: relative;
+  left: -180px;
+  top: -80px;
+  width: 80px;
+  height: 80px;
+  animation: Circle 4s ease-in-out infinite alternate;
+  -webkit-animation: Circle 4s ease-in-out infinite alternate;
+}
+
+.testimonials .circle {
+  position: relative;
+  right: -130%;
+  top: -600px;
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    width: 75%;
+  }
+  .testimonials h2 {
+    font-size: 40px;
+  }
+  .testimonials .plus {
+    left: -20px;
+    top: 0px;
+  }
+  .testimonials .circle {
+    right: -100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials {
+    width: 100%;
+  }
+  .testimonials h2 {
+    font-size: 25px;
+  }
+  .testimonials .circle,
+  .testimonials .plus {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.book-page {
+  padding-bottom: var(--padding-bottom);
+  padding-top: 0;
+}
+
+.book-page-container {
+  display: block;
+  margin: 0 210px;
+  position: relative;
+  width: 35%;
+  right: -20%;
+}
+
+@media screen and (max-width: 1024px) {
+  .book-page-container {
+    margin: 0 100px;
+    width: 50%;
+    right: -10%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .book-page-container {
+    margin: 0 0px;
+    width: 100%;
+    right: 0%;
+  }
+}

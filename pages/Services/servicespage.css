@@ -1,0 +1,89 @@
+.services-page {
+  padding-bottom: var(--padding-bottom);
+  position: relative;
+}
+
+.servicespage-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 50px 200px;
+}
+
+.services-page .serv-card {
+  background: url("../../assets/background1.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  max-width: 300px;
+  height: auto;
+  border: none;
+  text-align: left;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.services-page .serv-card span {
+  color: var(--main-color);
+  font-size: 60px;
+  border: 2px solid #f8f0ff;
+  width: fit-content;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.services-page .serv-card h2 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.services-page .serv-card p {
+  color: #444;
+}
+
+.services-page .serv-card button {
+  width: 50%;
+  padding: 10px;
+  background: #e1e2f6;
+  color: var(--primary-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.services-page .serv-card button:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .servicespage-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .servicespage-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin: 20px 40px;
+  }
+}
